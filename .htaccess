@@ -1,0 +1,3 @@
+RewriteCond %{REQUEST_FILENAME} ^.*(mp3|m4a|jpeg|jpg|gif|png|bmp|pdf|doc|docx|ppt|pptx|)$
+ RewriteCond %{HTTP_COOKIE} !^.*wordpress_logged_in.*$ [NC]
+ RewriteRule . - [R=403,L]
